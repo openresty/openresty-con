@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<!-- <meta name="renderer" content="webkit|ie-comp|ie-stand"> -->
+	<meta name="description" content="由OpenResty社区主办，360企业安全和360大学协办的OpenrestyCon 2015 大会于2015年11月14日9:00am 在360大厦举办。国内外顶级OpenResty专家齐聚360，共享技术盛宴！" />
+	<title>OpenResty Con 2016</title>
+	<link rel="stylesheet" href="./index.css">
+	<script>
+		var ua = navigator.userAgent;
+		var isIE = /\b(?:msie |ie |trident\/[0-9].*rv[ :])([0-9.]+)/i.test(ua);
+		if (isIE) {
+			alert('由于个人技术原因和时间原因，IE版本没兼容到，请尽量使用webkit内核的浏览器，safari chrome或者360安全浏览器极速模式等。如果您有更好的兼容IE的实现方法，可以访问 https://github.com/iresty/iresty.github.io来给我们 pull request');
+			window.location.href = 'https://github.com/iresty/iresty.github.io'
+		}
+	</script>
+	<style>
+		.box {
+			height: 100px;
+			width: 100px;
+			background-color: #ccc;
+		}
+	</style>
+</head>
+<body>
+	<!-- <a target="_blank" href="https://github.com/iresty/iresty.github.io"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a> -->
+	<div class="intro">
+		<h1>
+			<img class="or-logo" src="./images/logo.png" alt="OpenResty Logo"> OpenResty Con 2016
+		</h1>
+		<h2>2016年12月10日 9:00AM @深圳</h2>
+		<h3><a target="_blank" class="address" href="http://api.map.baidu.com/geocoder?address=深圳市腾讯大厦&output=html">地址:深圳腾讯大厦</a></h3>
+		<a class="join" href="http://www.bagevent.com/event/277509" target="about:blank">点击参会</a>
+	</div>
+	<!-- 讲师 -->
+	<div class="lecturer">
+		<h4 class="line"></h4>
+		<ul class="lecturer-list" data-index="0">
+			<li class="gray zhaoyu" data-index="1"></li>
+			<li class="gray zhangshun" data-index="2"></li>
+			<li class="gray xiangwei" data-index="3"></li>
+			<li class="gray chun" data-index="4"></li>
+			<li class="gray thefosk" data-index="5"></li>
+			<li class="gray yejing" data-index="6"></li>
+			<!-- <li class="gray zhangcong" data-index="7"></li> -->
+		</ul>
+		<div id="about">
+		</div>
+		<!-- <img class="QRcode" src="images/QRcode.jpg" alt="二维码"> -->
+	</div>
+
+	<!-- 详细内容 -->
+	<div class="detail">
+		<!-- 日程表 -->
+		<div class="schedule">
+			<h1>大会议程</h1>
+			<ul id="schedule-list">
+			</ul>	
+		</div>
+		
+		<!-- 赞助商 -->
+		<div class="sponsor mt30">
+			<h1 class="mt20">顶级合作伙伴</h1>
+			<p>
+				<a href="//www.smartisan.com/" target="_blank">
+					<img class="w250" src="images/sponsors/smartisan.png" title="锤子手机" alt="锤子手机">
+				</a>
+			</p>
+			<p>
+				<a href="//djt.qq.com/" target="_blank">
+					<img class="w250 tx" src="images/sponsors/tx.png" title="腾讯大讲堂" alt="腾讯大讲堂">
+				</a>
+			</p>
+			<h2 class="mt30">合作伙伴</h2>
+			<p class="logo-set">
+				<a href="//bearychat.com/" target="_blank">
+					<img class="logo" src="images/sponsors/bearychat.jpg" title="bearychat 全新的工作方式" alt="bearychat">
+				</a>
+
+				<a href="//cn.chinacache.com/" target="_blank">
+					<img class="logo" src="images/sponsors/cc.jpg" title="ChinaCache" alt="ChinaCache">
+				</a>
+
+				<a href="//www.qiniu.com/" target="_blank">
+					<img class="logo" src="images/sponsors/qiniu.png" title="七牛云存储" alt="七牛云存储">
+				</a>
+			</p> 
+			<p class="logo-set">
+				<a href="//b.360.cn/" target="_blank">
+					<img class="logo" src="images/sponsors/360.jpg" title="360企业安全" alt="360企业安全">
+				</a>
+				<a href="//www.stuq.org/" target="_blank">
+					<img class="stuq" src="images/sponsors/stuq.png" title="StuQ, 一个新的学习方式" alt="StuQ, 一个新的学习方式">
+				</a>
+
+				<!-- <a href="//www.kugou.com/" target="_blank">
+					<img class="logo" src="images/kugou.jpg" title="酷狗" alt="酷狗">
+				</a>			
+				<a href="//www.cdnzz.com/" target="_blank">
+					<img class="logo" src="images/suzhi.png" title="速致，比想象中更快" alt="速致，比想象中更快">
+				</a>
+				<a href="//www.sina.com.cn/" target="_blank">
+					<img class="logo" src="images/sina-news.png" title="新浪移动" alt="新浪移动">
+				</a> -->
+			</p>
+			<!-- <p class="logo-set">
+				<a href="//www.fastweb.com.cn/" target="_blank">
+					<img class="logo" src="images/fastweb.jpg" title="快网" alt="fastweb">
+				</a>
+				
+				<a href="//segmentfault.com/" target="_blank">
+					<img class="logo" src="images/sf.png" title="segmentfault 创造属于开发者的时代" alt="segmentfault">
+				</a>
+
+				<a href="//www.qiniu.com/" target="_blank">
+					<img class="logo" src="images/qiniu.png" title="七牛云存储" alt="七牛云存储">
+				</a>
+			</p> -->
+			
+		</div>
+		<p class="provided-by">Provided by <span class="foundation">OpenResty基金会</span> 发起，<a target="_blank" href="//djt.qq.com/" class="tencent">腾讯大讲堂</a href="//djt.qq.com/"> 和 <span class="zhuhai-open">珠海开源软件技术促进中心</span> 联合主办</p>
+		<p class="powered-by">Powered by <a class="my-github" target="_blank" href="//www.monkindey.xyz/">monkindey</a></p>
+	</div>
+</body>
+
+<script id="about-tmpl" type="text/template">
+	<h4 class="title"><strong>{name}</strong>{job}</h4>
+	<p class="brief">{brief}</p>
+</script>
+
+<!-- 移动端 -->
+<script id="about-m-tmpl" type="text/template">
+	<div class="{class} avatar"></div>
+	<h3 class="title">{name}</h3>	
+	<h4>{job}</h4>
+	<p class="brief">{brief}</p>
+</script>
+
+<!-- 日程表模板 -->
+<script id="schedule-tmpl-1" type="text/template">
+	<span class="schedule-item">{time} {name} {pdf}
+		<em title="{title}" class="doing">{doing}</em>
+	</span>
+</script>
+
+<script id="schedule-tmpl-2" type="text/template">
+	<span class="schedule-item fr">{time} {name} {pdf}
+		<em title="{title}" class="doing">{doing}</em>
+	</span>
+</script>
+
+<script src="./index.js"></script>
+<script src="./mobile.js"></script>
+</html>
+
