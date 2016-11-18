@@ -1,7 +1,7 @@
 html {
 	height: 100%;
 	position: relative;
-	min-width: 960px;
+	min-width: 1280px;
 	min-height: 530px;
 	font-family: consolas, 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
 }
@@ -68,7 +68,7 @@ body:before {
 	width: 100%;
 	color: white;
 	position: absolute;
-	top: 20%;
+	top: 18%;
 	right: 0;
 	left: 0;
 	margin: auto;
@@ -226,10 +226,18 @@ body:before {
 	background: url(images/lecturers/yejing.png) 0% / cover no-repeat;
 }
 
-/*7*/
-.zhangcong {
-	background: url(images/zhangcong.png) 0% / cover no-repeat;
+.wenming {
+	background: url(images/lecturers/wenming.png) 0% / cover no-repeat;
 }
+
+.zhoujing {
+	background: url(images/lecturers/zhoujing.png) 0% / cover no-repeat;
+}
+
+.wangchunyu {
+	background: url(images/lecturers/wangchunyu.png) 0% / cover no-repeat;
+}
+
 
 .QRcode {
 	position: absolute;

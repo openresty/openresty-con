@@ -40,6 +40,11 @@
 		brief: '工作期间，完成了京东三级列表页由Node.js版本到OpenResty的变迁，\
 		并针对三级列表页前端即服务器端做了大量的优化工作。'
 	}, {
+		class: 'wenming',
+		name: '温铭',
+		job: 'OpenResty 软件基金会 主席',
+		brief: ''
+	}, {
 		class: 'chun',
 		name: '章亦春',
 		job: 'OpenResty 开源项目创建者',
@@ -51,11 +56,23 @@
 		job: 'CTO @Mashape',
 		brief: ''
 	}, {
+		class: 'zhoujing',
+		name: '周晶',
+		job: '微博平台研发部高级架构师',
+		brief: '前新浪移动系统架构组负责人，新浪移动期间负责有移动后端平台架构，致力于OpenResty在公司的落地，\
+		目前主要关注各种高性能服务化相关架构，生命在于折腾，爱技术、爱分享'
+	}, {
 		class: 'yejing',
 		name: '叶靖',
 		job: '又拍云系统开发工程师',
 		brief: '对 Python/Lua/Go 等语言有较深入的研究，在 ngx_lua 和OpenResty模块开发方面有较多经验，\
 	专注于高并发高可用服务架构设计。平时热衷于参与开源社区分享开源经验'
+
+	}, {
+		class: 'wangchunyu',
+		name: '王春雨',
+		job: '腾讯研发管理部 产品总监',
+		brief: '12年研发管理实战经验，专注于敏捷研发工程实践，腾讯开源联盟（TOSA）组织者。'
 	}];
 
 	/**
@@ -137,14 +154,19 @@
 		name: '张顺',
 		doing: 'OpenResty与语音交互'
 	}, {
-		name: '王向维',
-		doing: '京东三级列表页整体架构介绍'
-
-	}, {
 		name: '叶靖',
 		doing: 'OpenResty在云处理服务集群中的应用'
+	}, {
+		name: '周晶',
+		doing: '新浪移动 OpenResty 应用开发实践'
+	}, {
+		name: '王春雨',
+		doing: '腾讯开源探索指路'
 
 	}, {
+		name: '温铭',
+		doing: 'OpenResty 软件基金会的过去、现在和未来'
+	},{
 		name: 'Marco Palladino',
 		title: 'Microservices & API Gateways with Kong and OpenResty',
 		doing: 'Microservices & API Gateways with Kong and OpenResty'
@@ -233,8 +255,8 @@
 
 		// 初始化显示头像为章亦春
 		if (e.INIT_PAGE) {
-			target = target.children[3];
-			index = 4;
+			target = target.children[4];
+			index = 5;
 			preClickedIndex = index;
 		}
 
