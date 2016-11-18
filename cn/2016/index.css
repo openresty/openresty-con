@@ -109,6 +109,7 @@ body:before {
 	/*top: 50%;*/
 	width: 100%;
 	height: 420px;
+	min-width: 1280px;
 }
 
 .lecturer-list {
@@ -226,10 +227,18 @@ body:before {
 	background: url(images/lecturers/yejing.png) 0% / cover no-repeat;
 }
 
-/*7*/
-.zhangcong {
-	background: url(images/zhangcong.png) 0% / cover no-repeat;
+.wenming {
+	background: url(images/lecturers/wenming.png) 0% / cover no-repeat;
 }
+
+.zhoujing {
+	background: url(images/lecturers/zhoujing.png) 0% / cover no-repeat;
+}
+
+.wangchunyu {
+	background: url(images/lecturers/wangchunyu.png) 0% / cover no-repeat;
+}
+
 
 .QRcode {
 	position: absolute;
