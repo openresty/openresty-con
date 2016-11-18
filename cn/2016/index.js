@@ -154,13 +154,8 @@
 		name: '张顺',
 		doing: 'OpenResty与语音交互'
 	}, {
-		name: '王向维',
-		doing: '京东三级列表页整体架构介绍'
-
-	}, {
 		name: '叶靖',
 		doing: 'OpenResty在云处理服务集群中的应用'
-
 	}, {
 		name: '周晶',
 		doing: '新浪移动 OpenResty 应用开发实践'
