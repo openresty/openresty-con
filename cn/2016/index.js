@@ -54,7 +54,8 @@
 		class: 'thefosk',
 		name: 'Marco Palladino',
 		job: 'CTO @Mashape',
-		brief: ''
+		brief: 'One of the core maintainer of Unirest and Kong, the most popular open-source API gateway for Microservices.  Creator of the largest API marketplace in the world.\
+Co-founded Mashape, the company behind Kong and the API marketplace.'
 	}, {
 		class: 'zhoujing',
 		name: '周晶',
