@@ -2,7 +2,7 @@
  * 感想：
  * (1). 过度依赖jquery等库($, on，很多原生的API不认识，DOM操作封装)
  * (2). 使用模板、reset.css, 正则表达式
- * (3). 上下左右居中 
+ * (3). 上下左右居中
  * (4). 浏览器兼容、设备兼容(响应式)
  * (5). 性能上优化 (http://web.jobbole.com/82551/)
  * (6). 两个数据源对应一个模板
@@ -162,7 +162,7 @@ Co-founded Mashape, the company behind Kong and the API marketplace.'
 		doing: '新浪移动 OpenResty 应用开发实践'
 	}, {
 		name: '王春雨',
-		doing: '腾讯开源探索指路'
+		doing: '腾讯开源探索之路'
 
 	}, {
 		name: '温铭',
