@@ -149,6 +149,9 @@ Co-founded Mashape, the company behind Kong and the API marketplace.'
 		time: "9:00",
 		doing: "开场"
 	}, {
+		name: '章亦春',
+		doing: 'OpenResty 2016 新发展'
+	}, {
 		name: '吴兆玉',
 		doing: 'Orange:一个基于OpenResty的API Gateway'
 	}, {
