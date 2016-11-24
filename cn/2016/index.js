@@ -149,31 +149,44 @@ Co-founded Mashape, the company behind Kong and the API marketplace.'
 		time: "9:00",
 		doing: "开场"
 	}, {
+		time: '9:10',
+		name: '温铭',
+		doing: 'OpenResty 软件基金会的过去、现在和未来'
+	}, {
+		time: '9:40',
 		name: '章亦春',
 		doing: 'OpenResty 2016 新发展'
 	}, {
-		name: '吴兆玉',
-		doing: 'Orange:一个基于OpenResty的API Gateway'
-	}, {
-		name: '张顺',
-		doing: 'OpenResty与语音交互'
-	}, {
-		name: '叶靖',
-		doing: 'OpenResty在云处理服务集群中的应用'
-	}, {
-		name: '周晶',
-		doing: '新浪移动 OpenResty 应用开发实践'
-	}, {
-		name: '王春雨',
-		doing: '腾讯开源探索之路'
-
-	}, {
-		name: '温铭',
-		doing: 'OpenResty 软件基金会的过去、现在和未来'
+		time: '11:00',
+		doing: 'lighting talk'
 	},{
+		time: '11:15',
 		name: 'Marco Palladino',
 		title: 'Microservices & API Gateways with Kong and OpenResty',
 		doing: 'Microservices & API Gateways with Kong and OpenResty'
+	}, {
+		time: '13:00',
+		name: '王春雨',
+		doing: '腾讯开源探索之路'
+	}, {
+		time: '13:45',
+		name: '吴兆玉',
+		doing: 'Orange:一个基于OpenResty的API Gateway'
+	},  {
+		time: '14:30',
+		name: '周晶',
+		doing: '新浪移动 OpenResty 应用开发实践'
+	},{
+		time: '15:15',
+		doing: '<span class="blue">茶歇</span>'
+	},{
+		time: '15:30',
+		name: '张顺',
+		doing: 'OpenResty与语音交互'
+	}, {
+		time: '16:15',
+		name: '叶靖',
+		doing: 'OpenResty在云处理服务集群中的应用'
 	}]
 
 	var byClass = function(className) {
