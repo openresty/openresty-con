@@ -76,72 +76,6 @@ Co-founded Mashape, the company behind Kong and the API marketplace.'
 		brief: '12年研发管理实战经验，专注于敏捷研发工程实践，腾讯开源联盟（TOSA）组织者。'
 	}];
 
-	/**
-	 * @日程表
-	 * time：时间点
-	 * name: 名字
-	 * doing：干嘛
-	 */
-	// global.__SCHEDULE__ = schedule = [{
-	// 	time: "8:30",
-	// 	doing: '<span class="red">签到</span>'
-	// }, {
-	// 	time: "9:00",
-	// 	doing: "开场"
-	// }, {
-	// 	time: "9:15",
-	// 	name: "张聪",
-	// 	doing: "Using ngx_lua In UPYUN 2",
-	// 	pdf: 'zhangcong.pdf'
-	// }, {
-	// 	time: "10:10",
-	// 	name: "张帅",
-	// 	doing: "Be MicroService Hero",
-	// 	pdf: 'zhangshuai.pdf'
-	// }, {
-	// 	time: "11:05",
-	// 	name: "",
-	// 	doing: '<span class="blue">闪电演讲(速致)</span>',
-	// 	pdf: "suzhi.pdf"
-	// }, {
-	// 	time: "11:20",
-	// 	doing: '<span class="green">颁奖</span>'
-	// }, {
-	// 	time: "11:25",
-	// 	name: "Aapo Talvensaari",
-	// 	doing: "Developing OpenResty Framework",
-	// 	pdf: 'aapo.pdf'
-	// }, {
-	// 	time: "12:20",
-	// 	doing: '<span class="red">午餐</span>'
-	// }, {
-	// 	time: "13:30",
-	// 	name: "章亦春",
-	// 	doing: "浅谈OpenResty未来发展",
-	// 	pdf: "zhangyichun.pdf"
-	// }, {
-	// 	time: "14:30",
-	// 	name: "孙传文",
-	// 	doing: "Nginx+Lua模块在阿里的使用",
-	// 	pdf: "sunchuanwen.pdf"
-	// }, {
-	// 	time: "15:25",
-	// 	doing: '<span class="blue">闪电演讲</span>'
-	// }, {
-	// 	time: "15:45",
-	// 	doing: '<span class="blue">茶歇</span>'
-	// }, {
-	// 	time: "16:05",
-	// 	name: "朱德江",
-	// 	doing: "基于OpenResty的百万级长连接推送",
-	// 	pdf: "zhudejiang.pdf"
-	// }, {
-	// 	time: "17:00",
-	// 	name: "张开涛",
-	// 	doing: "Nginx+Lua在京东商品详情页的大规模应用",
-	// 	pdf: "zhangkaitao.pdf"
-	// }];
-
 	global.__SCHEDULE__ = schedule = [{
 		time: "8:30",
 		doing: '<span class="red">签到</span>'
@@ -158,7 +92,7 @@ Co-founded Mashape, the company behind Kong and the API marketplace.'
 		doing: 'OpenResty 2016 新发展'
 	}, {
 		time: '11:00',
-		doing: 'lighting talk'
+		doing: '闪电演讲'
 	},{
 		time: '11:15',
 		name: 'Marco Palladino',
