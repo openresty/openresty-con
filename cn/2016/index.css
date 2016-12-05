@@ -311,7 +311,7 @@ body:before {
 	text-shadow: 2px 2px 4px #34495e;
 }
 
-.tx {
+.tx, .or {
 	width: 150px;
 }
 
