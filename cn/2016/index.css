@@ -302,6 +302,10 @@ body:before {
 	text-indent: 0;
 }
 
+.ppt, .video {
+	color: #42b983;
+}
+
 /*合作伙伴*/
 .sponsor {
 	width: 700px;

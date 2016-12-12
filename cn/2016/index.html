@@ -134,13 +134,18 @@
 
 <!-- 日程表模板 -->
 <script id="schedule-tmpl-1" type="text/template">
-	<span class="schedule-item">{time} {name} {pdf}
+	<span class="schedule-item">
+		{time} {name} <a class="ppt" target="_blank" href="{ppt_url}">{pdf}</a>
+		<a class="ppt" target="_blank" href="{ppt_url_1}">{pdf_1}</a>
+		<a class="video" target="_blank" href="{video_url}">{video}</a>
 		<em title="{title}" class="doing">{doing}</em>
 	</span>
 </script>
 
 <script id="schedule-tmpl-2" type="text/template">
-	<span class="schedule-item fr">{time} {name} {pdf}
+	<span class="schedule-item fr">
+		{time} {name} <a class="ppt" target="_blank" href="{ppt_url}">{pdf}</a>
+		<a class="video" target="_blank" href="{video_url}">{video}</a>
 		<em title="{title}" class="doing">{doing}</em>
 	</span>
 </script>
