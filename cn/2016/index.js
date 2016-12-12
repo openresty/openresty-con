@@ -85,19 +85,29 @@ Co-founded Mashape, the company behind Kong and the API marketplace.'
 	}, {
 		time: '9:10',
 		name: '温铭',
-		doing: 'OpenResty 软件基金会的过去、现在和未来'
+		doing: 'OpenResty 软件基金会的过去、现在和未来',
+		ppt_url: 'http://resty.b0.upaiyun.com/OpenResty%E8%BD%AF%E4%BB%B6%E5%9F%BA%E9%87%91%E4%BC%9A%20%E7%9A%84%E8%BF%87%E5%8E%BB%E3%80%81%E7%8E%B0%E5%9C%A8%E5%92%8C%E6%9C%AA%E6%9D%A5.pdf',
+		pdf: 'Slide1',
+		ppt_url_1: 'http://resty.b0.upaiyun.com/%E9%AB%98%E6%80%A7%E8%83%BD%E6%9C%8D%E5%8A%A1%E7%AB%AF%E7%9A%84%E5%87%A0%E4%B8%AA%E6%83%8A%E4%BA%BA%E7%9C%9F%E7%9B%B8.pdf',
+		pdf_1: 'Slide2'
 	}, {
 		time: '9:40',
 		name: '章亦春',
-		doing: 'OpenResty 2016 新发展'
+		doing: 'OpenResty 2016 新发展',
+		ppt_url: 'http://openresty.org/slides/New-development-of-OpenResty-in-2016.pdf',
+		pdf: 'Slide',
+		video_url: 'http://openresty.org/videos/openresty-con-2016.mp4',
+		video: 'Video'
 	}, {
 		time: '11:00',
 		doing: '闪电演讲'
-	},{
+	}, {
 		time: '11:15',
 		name: 'Marco Palladino',
 		title: 'Microservices & API Gateways with Kong and OpenResty',
-		doing: 'Microservices & API Gateways with Kong and OpenResty'
+		doing: 'Microservices & API Gateways with Kong and OpenResty',
+		ppt_url: 'http://resty.b0.upaiyun.com/KONG_OPENRESTY.pdf',
+		pdf: 'Slide'
 	}, {
 		time: '13:00',
 		name: '王春雨',
@@ -105,22 +115,28 @@ Co-founded Mashape, the company behind Kong and the API marketplace.'
 	}, {
 		time: '13:45',
 		name: '吴兆玉',
-		doing: 'Orange:一个基于OpenResty的API Gateway'
-	},  {
+		doing: 'Orange:一个基于OpenResty的API Gateway',
+		ppt_url: 'http://resty.b0.upaiyun.com/orange.pdf',
+		pdf: 'Slide'
+	}, {
 		time: '14:30',
 		name: '周晶',
 		doing: '新浪移动 OpenResty 应用开发实践'
-	},{
+	}, {
 		time: '15:15',
 		doing: '<span class="blue">茶歇</span>'
-	},{
+	}, {
 		time: '15:30',
 		name: '张顺',
-		doing: 'OpenResty与语音交互'
+		doing: 'OpenResty与语音交互',
+		ppt_url: 'http://resty.b0.upaiyun.com/openresty-con2016-aaashun.pdf',
+		pdf: 'Slide'
 	}, {
 		time: '16:15',
 		name: '叶靖',
-		doing: 'OpenResty在云处理服务集群中的应用'
+		doing: 'OpenResty在云处理服务集群中的应用',
+		ppt_url: 'http://yejingx.b0.upaiyun.com/OpenResty%E5%9C%A8%E4%BA%91%E5%A4%84%E7%90%86%E6%9C%8D%E5%8A%A1%E9%9B%86%E7%BE%A4%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8.pdf',
+		pdf: 'Slide'
 	}]
 
 	var byClass = function(className) {
@@ -139,16 +155,16 @@ Co-founded Mashape, the company behind Kong and the API marketplace.'
 			if (index % 2 == 0) {
 				scheduleHtml += '<li>';
 				scheduleHtml += scheduleTmpl1.replace(/{(\w+)}/g, function($1, $2) {
-					if ($2 == 'pdf' && value[$2]) {
-						return '<a class="blue" download=' + value[$2] + ' href=' + PDF_PATH + value[$2] + '>演讲稿</a>'
-					}
+					// if ($2 == 'pdf' && value[$2]) {
+					// 	return '<a class="blue" download=' + value[$2] + ' href=' + PDF_PATH + value[$2] + '>演讲稿</a>'
+					// }
 					return value[$2] ? value[$2] : '';
 				});
 			} else {
 				scheduleHtml += scheduleTmpl2.replace(/{(\w+)}/g, function($1, $2) {
-					if ($2 == 'pdf' && value[$2]) {
-						return '<a class="blue" download=' + value[$2] + ' href=' + PDF_PATH + value[$2] + '>演讲稿</a>'
-					}
+					// if ($2 == 'pdf' && value[$2]) {
+					// 	return '<a class="blue" download=' + value[$2] + ' href=' + PDF_PATH + value[$2] + '>演讲稿</a>'
+					// }
 					return value[$2] ? value[$2] : '';
 				});
 				scheduleHtml += '</li>';
