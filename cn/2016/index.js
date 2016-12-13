@@ -34,12 +34,6 @@
 		job: 'AISpeech开发总监',
 		brief: '专注于将人机语音交互技术应用到生活中，设计了语音云和AIOS等语音交互基础架构。OpenResty贡献者'
 	}, {
-		class: 'xiangwei',
-		name: '王向维',
-		job: '京东商城三级列表页架构师',
-		brief: '工作期间，完成了京东三级列表页由Node.js版本到OpenResty的变迁，\
-		并针对三级列表页前端即服务器端做了大量的优化工作。'
-	}, {
 		class: 'wenming',
 		name: '温铭',
 		job: 'OpenResty 软件基金会 主席',
@@ -111,7 +105,9 @@ Co-founded Mashape, the company behind Kong and the API marketplace.'
 	}, {
 		time: '13:00',
 		name: '王春雨',
-		doing: '腾讯开源探索之路'
+		doing: '腾讯开源探索之路',
+		ppt_url: 'http://resty.b0.upaiyun.com/%E8%85%BE%E8%AE%AF%E5%BC%80%E6%BA%90%E6%8E%A2%E7%B4%A2%E4%B9%8B%E8%B7%AF.pdf',
+		pdf: 'Slide'
 	}, {
 		time: '13:45',
 		name: '吴兆玉',
@@ -121,7 +117,9 @@ Co-founded Mashape, the company behind Kong and the API marketplace.'
 	}, {
 		time: '14:30',
 		name: '周晶',
-		doing: '新浪移动 OpenResty 应用开发实践'
+		doing: '新浪移动 OpenResty 应用开发实践',
+		ppt_url: 'http://resty.b0.upaiyun.com/%E6%96%B0%E6%B5%AA%E7%A7%BB%E5%8A%A8OpenResty%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5.pdf',
+		pdf: 'Slide'
 	}, {
 		time: '15:15',
 		doing: '<span class="blue">茶歇</span>'
