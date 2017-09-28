@@ -36,7 +36,7 @@
       name: '章亦春',
       job: 'OpenResty 开源项目创建者',
       brief:
-        'OpenResty 开源项目创始人，OpenResty Inc. 公司创始人兼 CEO，NGINX 开源项目贡献者'
+        'OpenResty 开源项目创始人，OpenResty Inc. 公司创始人兼 CEO，NGINX 和 LuaJIT 等众多开源项目贡献者'
     },
     {
       class: 'lec4',
