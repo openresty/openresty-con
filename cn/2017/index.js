@@ -36,8 +36,7 @@
       name: '章亦春',
       job: 'OpenResty 开源项目创建者',
       brief:
-        'OpenResty 开源项目创始人，OpenResty Inc. 公司创始人兼 CEO，NGINX、LuaJIT、SystemTap \
-    等众多开源项目贡献者'
+        'OpenResty 开源项目创始人，OpenResty Inc. 公司创始人兼 CEO，NGINX 开源项目贡献者'
     },
     {
       class: 'lec4',
@@ -59,6 +58,12 @@
       name: '李凯',
       job: '快乐茄后台研发工程师',
       brief: '专注于高并发场景解决方案，擅长 Python/Java/Lua 语言开发，对 OpenResty 有较多的实践案例，热爱新技术，喜欢折腾'
+    },
+    {
+      class: 'lec7',
+      name: '周晶',
+      job: '微博平台研发部高级架构师',
+      brief: '前新浪移动系统架构组负责人，新浪移动期间负责有移动后端平台架构，致力于OpenResty在公司的落地，	目前主要关注各种高性能服务化相关架构，生命在于折腾，爱技术、爱分享'
     }
   ];
 
@@ -100,6 +105,11 @@
       time: '16:30',
       name: '李凯',
       doing: '基于 OpenResty 实现 IM 后台'
+    },
+    {
+      time: '17:30',
+      name: '周晶',
+      doing: 'OpenResty 在微博服务化进程中的应用'
     }
   ];
 
@@ -195,7 +205,7 @@
 
       // 初始化显示头像为章亦春
       if (e.INIT_PAGE) {
-        let whereIsChun = target.children.length / 2;
+        let whereIsChun = 3;
         target = target.children[whereIsChun];
         index = whereIsChun;
         preClickedIndex = index;
