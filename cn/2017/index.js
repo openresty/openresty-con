@@ -197,6 +197,7 @@
       var target = e.target;
       var index = parseInt(target.getAttribute('data-index'));
       var aboutHtml = byId('about-tmpl').innerHTML;
+      var whereIsChun = 3;
 
       // 检测是否头像为140像素, 即是放大的图片
       if (target.classList.contains('avatar-140')) {
@@ -205,7 +206,6 @@
 
       // 初始化显示头像为章亦春
       if (e.INIT_PAGE) {
-        let whereIsChun = 3;
         target = target.children[whereIsChun];
         index = whereIsChun;
         preClickedIndex = index;
