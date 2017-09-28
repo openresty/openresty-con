@@ -36,8 +36,8 @@
       name: '章亦春',
       job: 'OpenResty 开源项目创建者',
       brief:
-        '喜欢不务正业，Nginx 与 SystemTap 贡献者。以写程序为主，喜欢摆弄各种 UNIX 风格的工具，\
-		以及不同的编程语言，例如 C/C++、Lua、Perl 等等'
+        'OpenResty 开源项目创始人，OpenResty Inc. 公司创始人兼 CEO，NGINX、LuaJIT、SystemTap \
+    等众多开源项目贡献者'
     },
     {
       class: 'lec4',
