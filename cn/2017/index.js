@@ -48,19 +48,12 @@
     },
     {
       class: 'lec5',
-      name: '聂永',
-      job: '新浪微博移动产品工程师',
-      brief:
-        '来自于微博产品部，负责有移动后端网络基础架构设施建设和维护等。专注后端，喜欢分享，喜欢折腾'
-    },
-    {
-      class: 'lec6',
       name: '李凯',
       job: '快乐茄后台研发工程师',
       brief: '专注于高并发场景解决方案，擅长 Python/Java/Lua 语言开发，对 OpenResty 有较多的实践案例，热爱新技术，喜欢折腾'
     },
     {
-      class: 'lec7',
+      class: 'lec6',
       name: '周晶',
       job: '微博平台研发技术专家',
       brief: '微博平台研发技术专家、OpenResty 官方委员会成员，高性能 OpenResty 开发框架 Vanilla 作者，目前主要负责微博平台服务化框架的研发，主攻跨语言方向'
@@ -88,26 +81,21 @@
     },
     {
       time: '13:30',
-      name: '聂永',
-      doing: '基于 OpenResty 构建一站式应用服务器实践'
-    },
-    {
-      time: '14:30',
       name: '孙大同',
       doing: 'NGINX Stream 简介及 OpenResty 对其支持'
     },
     {
-      time: '15:30',
+      time: '14:30',
       name: 'codedump',
       doing: 'Lua 5.1.4 GC 原理'
     },
     {
-      time: '16:30',
+      time: '15:30',
       name: '李凯',
       doing: '基于 OpenResty 实现 IM 后台'
     },
     {
-      time: '17:30',
+      time: '16:30',
       name: '周晶',
       doing: 'OpenResty 在微博服务化进程中的应用'
     }
