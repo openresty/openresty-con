@@ -13,7 +13,7 @@ body {
 
 ul {
   list-style: none;
-  -webkit-padding-start: 0;
+  padding-left: 0;
 }
 
 a {
