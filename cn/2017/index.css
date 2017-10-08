@@ -271,7 +271,7 @@ body:before {
   width: 49%;
   background-color: #f8f8f8;
   text-indent: 20px;
-  line-height: 24px;
+  line-height: 1.5;
   box-shadow: 1px 1px #ccc;
   border-radius: 3px;
 }
@@ -279,15 +279,9 @@ body:before {
 .doing {
   display: block;
   font-style: normal;
-  width: 90%;
-  margin: 0 auto;
+  padding: 0 20px;
   /*color: #2674BA;*/
   color: black;
-  /*太多显示不下*/
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-
   text-indent: 0;
 }
 
@@ -408,10 +402,6 @@ body:before {
     width: 90%;
   }
 
-  .doing {
-    white-space: pre-wrap;
-  }
-
   .sponsor {
     height: auto;
     width: 100%;
@@ -428,5 +418,11 @@ body:before {
 
   .logo {
     width: 250px;
+  }
+}
+
+@media (min-width: 421px) {
+  .doing {
+    min-height: 3em;
   }
 }
