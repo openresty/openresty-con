@@ -39,17 +39,17 @@
 		job: 'OpenResty 软件基金会 主席',
 		brief: ''
 	}, {
-		class: 'chun',
-		name: '章亦春',
-		job: 'OpenResty 开源项目创建者',
-		brief: '喜欢不务正业，Nginx 与 SystemTap 贡献者。以写程序为主，喜欢摆弄各种 UNIX 风格的工具，\
-		以及不同的编程语言，例如 C/C++、Lua、Perl 等等'
-	}, {
 		class: 'thefosk',
 		name: 'Marco Palladino',
 		job: 'CTO @Mashape',
 		brief: 'One of the core maintainer of Unirest and Kong, the most popular open-source API gateway for Microservices.  Creator of the largest API marketplace in the world.\
 Co-founded Mashape, the company behind Kong and the API marketplace.'
+	}, {
+		class: 'chun',
+		name: '章亦春',
+		job: 'OpenResty 开源项目创建者',
+		brief: '喜欢不务正业，Nginx 与 SystemTap 贡献者。以写程序为主，喜欢摆弄各种 UNIX 风格的工具，\
+		以及不同的编程语言，例如 C/C++、Lua、Perl 等等'
 	}, {
 		class: 'zhoujing',
 		name: '周晶',
