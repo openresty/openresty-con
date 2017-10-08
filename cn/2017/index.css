@@ -203,24 +203,30 @@ body:before {
 }
 
 .lec2 {
-  background: url(images/lecturers/coredump.png) 0% / cover no-repeat;
+  background: url(images/lecturers/thi.png) 0% / cover no-repeat;
 }
 
 .lec3 {
-  background: url(images/lecturers/chun.png) 0% / cover no-repeat;
+  background: url(images/lecturers/coredump.png) 0% / cover no-repeat;
 }
 
 .lec4 {
-  background: url(images/lecturers/datong.png) 0% / cover no-repeat;
+  background: url(images/lecturers/chun.png) 0% / cover no-repeat;
 }
 
 .lec5 {
-  background: url(images/lecturers/likai.png) 0% / cover no-repeat;
+  background: url(images/lecturers/datong.png) 0% / cover no-repeat;
 }
 
 .lec6 {
+  background: url(images/lecturers/likai.png) 0% / cover no-repeat;
+}
+
+.lec7 {
   background: url(images/lecturers/zhoujing.png) 0% / cover no-repeat;
 }
+
+
 
 .QRcode {
   position: absolute;

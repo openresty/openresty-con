@@ -24,6 +24,12 @@
     },
     {
       class: 'lec2',
+      name: 'Thibault Charbonnier',
+      job: 'Lead Engineer of Kong (Open Source API Gateway) and OpenResty Contributor',
+      brief: 'Main contributor & Lead Engineer of Kong, OpenResty contributor.'
+    },
+    {
+      class: 'lec3',
       name: 'codedump',
       job: '游戏服务器后台开发者',
       brief:
@@ -32,14 +38,14 @@
 	  遂开始研究其实现原理，陆续公布于网络。个人博客：www.codedump.info 《Lua 设计与实现》作者'
     },
     {
-      class: 'lec3',
+      class: 'lec4',
       name: '章亦春',
       job: 'OpenResty 开源项目创建者',
       brief:
         'OpenResty 开源项目创始人，OpenResty Inc. 公司创始人兼 CEO，NGINX 和 LuaJIT 等众多开源项目贡献者'
     },
     {
-      class: 'lec4',
+      class: 'lec5',
       name: '孙大同',
       job: 'OpenResty 公司技术合伙人',
       brief:
@@ -47,13 +53,13 @@
 		对 NGINX，Linux Kernel 等有深入的研究。痴迷于 Linux 下的高性能网络程序开发以及性能优化'
     },
     {
-      class: 'lec5',
+      class: 'lec6',
       name: '李凯',
       job: '快乐茄后台研发工程师',
       brief: '专注于高并发场景解决方案，擅长 Python/Java/Lua 语言开发，对 OpenResty 有较多的实践案例，热爱新技术，喜欢折腾'
     },
     {
-      class: 'lec6',
+      class: 'lec7',
       name: '周晶',
       job: '微博平台研发技术专家',
       brief: '微博平台研发技术专家、OpenResty 官方委员会成员，高性能 OpenResty 开发框架 Vanilla 作者，目前主要负责微博平台服务化框架的研发，主攻跨语言方向'
@@ -62,20 +68,25 @@
 
   global.__SCHEDULE__ = schedule = [
     {
-      time: '8:45',
+      time: '8:30',
       doing: '<span class="red">签到</span>'
     },
     {
-      time: '9:15',
+      time: '9:00',
       doing: '开场'
     },
     {
-      time: '9:30',
+      time: '9:15',
       name: '龚凌晖',
       doing: 'OpenResty 在 Strikingly 集群架构的应用'
     },
     {
-      time: '10:30',
+      time: '10:00',
+      name: 'Thibault Charbonnier',
+      doing: 'Developing OpenResty app for third-party customers'
+    },
+    {
+      time: '11:00',
       name: '章亦春',
       doing: 'OpenResty 的商业化和小语言'
     },
@@ -195,7 +206,7 @@
       // 初始化显示头像为章亦春
       if (e.INIT_PAGE) {
         target = target.children[whereIsChun];
-        index = whereIsChun;
+        index = whereIsChun + 1;
         preClickedIndex = index;
       }
 
