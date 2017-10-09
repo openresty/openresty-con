@@ -25,8 +25,8 @@
     {
       class: 'lec2',
       name: 'Thibault Charbonnier',
-      job: 'Lead Engineer of Kong (Open Source API Gateway) and OpenResty Contributor',
-      brief: 'Main contributor & Lead Engineer of Kong, OpenResty contributor.'
+      job: '',
+      brief: 'Lead Engineer of Kong (Open Source API Gateway) and OpenResty Contributor'
     },
     {
       class: 'lec3',
@@ -83,7 +83,7 @@
     {
       time: '10:00',
       name: 'Thibault Charbonnier',
-      doing: 'Developing OpenResty app for third-party customers'
+      doing: 'Developing a user-friendly OpenResty application'
     },
     {
       time: '11:00',
