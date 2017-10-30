@@ -302,6 +302,7 @@ body:before {
 .tx,
 .or {
   width: 150px;
+  padding-left: 50px;
 }
 
 .stuq {
@@ -413,7 +414,6 @@ body:before {
 
   .logo-set a {
     display: block;
-    margin-top: 10px;
   }
 
   .logo {
