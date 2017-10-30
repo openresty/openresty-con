@@ -99,7 +99,9 @@
     {
       time: '13:30',
       name: '孙大同',
-      doing: 'NGINX Stream 简介及 OpenResty 对其支持'
+      doing: 'NGINX Stream 简介及 OpenResty 对其支持',
+      ppt_url: 'books/Intruduction to the NGINX stream subsystem and OpenResty\'s support.pdf',
+      pdf: 'Slide'
     },
     {
       time: '14:30',
