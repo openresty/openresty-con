@@ -150,7 +150,7 @@
 	}
 
 	// 初始化页面触发click事件, 显示章亦春图片
-	var initPage = function() {
+	function initPage() {
 		var aboutHtml = byId('about-tmpl').innerHTML;
 		var event = new Event('click');
 
@@ -184,7 +184,11 @@
 		// 需要重构
 		renderSchedule();
 		// });
-	};
+	}
+
+	function isPC() {
+		return window.matchMedia('(min-width: 421px)').matches;
+	}
 
 	var about = byId('about');
 	var lecturerList = byClass('lecturer-list')[0];
@@ -243,29 +247,32 @@
 		false
 	);
 
-	momentList.addEventListener(
-		'click',
-		function(e) {
-			imageMark.style.display = 'block';
-			imageMark.classList.add('active');
-			expandedImage.setAttribute('src', e.target.getAttribute('src'));
-		},
-		false
-	);
+	// 如果是移动端的话就不要监听click了
+	if (isPC()) {
+		momentList.addEventListener(
+			'click',
+			function(e) {
+				imageMark.style.display = 'block';
+				imageMark.classList.add('active');
+				expandedImage.setAttribute('src', e.target.getAttribute('src'));
+			},
+			false
+		);
 
-	imageMark.addEventListener(
-		'click',
-		function(e) {
-			imageMark.classList.remove('active');
-			imageMark.style.display = 'none';
-		},
-		false
-	);
+		imageMark.addEventListener(
+			'click',
+			function(e) {
+				imageMark.classList.remove('active');
+				imageMark.style.display = 'none';
+			},
+			false
+		);
+	}
 
 	initPage();
 
 	window.addEventListener('resize', function() {
-		if (window.matchMedia('(min-width: 421px)').matches) {
+		if (isPC()) {
 			initPage();
 		}
 	});

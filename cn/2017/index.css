@@ -444,7 +444,14 @@ body:before {
 	.schedule-item {
 		text-align: left;
 		width: 90%;
-	}
+  }
+  
+  #moment-list img {
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+    height: initial;
+  }
 
 	.sponsor {
 		height: auto;
