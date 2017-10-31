@@ -291,18 +291,13 @@ body:before {
 
 /* 精彩瞬间 */
 #moment-list img {
-	height: 220px;
+	height: 150px;
 	box-shadow: 5px 5px 5px #ccc;
 	border-radius: 5px;
 }
 
 #moment-list img:hover {
 	cursor: zoom-in;
-}
-
-#moment-list img.double {
-	width: 100%;
-	height: initial;
 }
 
 .mask {
