@@ -1,5 +1,8 @@
 {
   "name": "openresty",
+  "scripts": {
+    "imin": "gulp imagemin"
+  },
   "dependencies": {
     "jpegtran-bin": "^3.1.0"
   },
