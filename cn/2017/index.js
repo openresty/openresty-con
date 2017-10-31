@@ -94,13 +94,13 @@
     {
       name: 'codedump',
       doing: 'Lua 5.1.4 GC 原理',
-      ppt_url: 'books/Lua 5.1.4 GC 原理.key',
+      ppt_url: 'books/Lua 5.1.4 GC 原理.pdf',
       pdf: '幻灯片'
     },
     {
       name: '李凯',
       doing: '基于 OpenResty 实现 IM 后台',
-      ppt_url: 'books/基于openresty构建im后台.pptx',
+      ppt_url: 'books/基于openresty构建im后台.pdf',
       pdf: '幻灯片'
     },
     {
