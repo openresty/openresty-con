@@ -80,49 +80,49 @@
       name: '龚凌晖',
       doing: 'OpenResty 在 Strikingly 集群架构的应用',
       ppt_url: 'books/OpenResty在Strikingly网站集群中的应用.pdf',
-      pdf: 'Slide'
+      pdf: '幻灯片'
     },
     {
       time: '10:00',
       name: 'Thibault Charbonnier',
       doing: 'Developing a user-friendly OpenResty application',
       ppt_url: 'books/developing a friendly openresty application.pdf',
-      pdf: 'Slide'
+      pdf: '幻灯片'
     },
     {
       time: '11:00',
       name: '章亦春',
       doing: 'OpenResty 的商业化和小语言',
       ppt_url: 'books/OpenResty Commercialization and DSL Era - V3.pdf',
-      pdf: 'Slide'
+      pdf: '幻灯片'
     },
     {
       time: '13:30',
       name: '孙大同',
       doing: 'NGINX Stream 简介及 OpenResty 对其支持',
       ppt_url: 'books/Intruduction to the NGINX stream subsystem and OpenResty\'s support.pdf',
-      pdf: 'Slide'
+      pdf: '幻灯片'
     },
     {
       time: '14:30',
       name: 'codedump',
       doing: 'Lua 5.1.4 GC 原理',
       ppt_url: 'books/Lua 5.1.4 GC 原理.key',
-      pdf: 'Slide'
+      pdf: '幻灯片'
     },
     {
       time: '15:30',
       name: '李凯',
       doing: '基于 OpenResty 实现 IM 后台',
       ppt_url: 'books/基于openresty构建im后台.pptx',
-      pdf: 'Slide'
+      pdf: '幻灯片'
     },
     {
       time: '16:30',
       name: '周晶',
       doing: 'OpenResty 在微博服务化进程中的应用',
       ppt_url: 'books/OpenResty 在微博服务化进程中的应用.pdf',
-      pdf: 'Slide'
+      pdf: '幻灯片'
     }
   ];
 
