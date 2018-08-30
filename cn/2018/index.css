@@ -75,6 +75,23 @@ body:before {
 	text-align: center;
 }
 
+.topic {
+	width: 960px;
+	margin: 0 auto;
+	color: #999;
+	text-indent: 20px;
+}
+
+.topic dt {
+	border-left: 2px solid #2674ba;
+}
+
+.topic dd {
+	margin-left: 20px;
+	font-size: 14px;
+	margin-top: 5px;
+}
+
 .or-logo {
 	height: 50px;
 	width: 50px;
