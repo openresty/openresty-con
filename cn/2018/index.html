@@ -32,120 +32,33 @@
 		<h3><a target="_blank" class="address" href="//j.map.baidu.com/ORFLH">地址: 杭州市滨江区网商路559号网易大厦</a></h3>
 	</div>
 
-	<div class="topic">
-		<p>
-			OpenResty 大会是由 OpenResty 软件基金会主办的技术盛会，旨在为业界建立一个广泛、有效的交流合作平台。
-			OpenResty 大会内容源于实践并面向社区，演讲嘉宾围绕热点话题，分享技术创新和最佳实践。议题征集现已开启，我们诚挚邀
-			请各位技术专家提交议题，与大家分享您的实践和经验。
-		</p>
-
-		<p>
-			截止时间为 2018 年 9 月 20 日，请填写此表提交议题 <a target="_blank" href="https://jinshuju.net/f/7VktFZ">https://jinshuju.net/f/7VktFZ</a>
-			。提交申请后，我们会与您沟通幻灯片以及具体内容，并在 10 月 1 号之前告知是否通过。
-		</p>
-
-		<dl>
-			<dt>议题要求</dt>
-			<dd>
-				内容是与 OpenResty 相关的技术内容，突出技术创新和实际应用;
-			</dd>
-			<dd>
-				议题分享时长控制在 40 分钟以内;
-			</dd>
-		</dl>
-
-		<dl>
-			<dt>演讲嘉宾权益</dt>
-			<dd>
-				两晚由主办方安排的酒店住宿
-			</dd>
-			<dd>
-				赠送 5 张大会门票
-			</dd>
-		</dl>
-
-		<p>
-			按照历届大会的惯例，现场还有若干闪电演讲的名额，欢迎大家现场参与。
-		</p>
-
-	   <p>
-			如果有公司有意赞助本次大会，可以填写下面的表格：<a href="https://jinshuju.net/f/91cNIL">https://jinshuju.net/f/91cNIL</a>
-		 </p>
-	</div>
-
-	<!-- 讲师 -->
-	<div class="lecturer">
-		<h4 class="line"></h4>
-		<ul class="lecturer-list" data-index="0">
-			<!-- <li class="gray lec1" data-index="1"></li>
-			<li class="gray lec2" data-index="2"></li>
-			<li class="gray lec3" data-index="3"></li> -->
-			<li class="gray lec4" data-index="4"></li>
-			<!-- <li class="gray lec5" data-index="5"></li>
-			<li class="gray lec6" data-index="6"></li>
-			<li class="gray lec7" data-index="7"></li> -->
+	<div class="nav-container">
+		<ul id="nav">
+			<li class="active" data-id="lecturer-list">嘉宾</li>
+			<li data-id="schedule-list">日程</li>
 		</ul>
-		<div id="about">
-		</div>
-		<!-- <img class="QRcode" src="images/QRcode.jpg" alt="二维码"> -->
+	</div>
+	
+	<!-- 嘉宾 -->
+	<div class="lecturer">
+		<ul id="lecturer-list"></ul>
 	</div>
 
-	<!-- 详细内容 -->
-	<div class="detail">
-		<!-- 日程表 -->
-		<div class="schedule">
-			<!-- <h1>大会议题</h1> -->
-			<ul id="schedule-list">
-			</ul>
-		</div>
-
-		<div class="moment">
-			<ul id="moment-list"></ul>
-		</div>
-
-		<!-- 赞助商 -->
-		<!-- <div class="sponsor mt30">
-			<h1 class="mt20">合作伙伴</h1>
-			<p class="logo-set">
-				<a href="http://www.smartisan.com/" target="_blank">
-					<img class="w250" src="images/sponsors/smartisan.png" title="锤子手机" alt="锤子手机">
-				</a>
-				<a href="http://openresty.com/cn/" target="_blank" style="margin-right:25px">
-					<img class="or" src="images/sponsors/or.png" title="OpenResty" alt="OpenResty">
-				</a>
-				<a href="#" target="_blank" style="margin-right:25px">
-					<img class="or" src="images/sponsors/it.png" title="IT 大咖说" alt="IT 大咖说">
-				</a>
-				<span></span>
-				<a href="http://djt.qq.com/" target="_blank" style="padding-right: 30px">
-					<img class="w250 tx" src="images/sponsors/tx.png" title="腾讯大讲堂" alt="腾讯大讲堂">
-				</a>
-				<a href="http://b.360.cn/" target="_blank">
-					<img class="logo" src="images/sponsors/360.jpg" title="360企业安全" alt="360企业安全">
-				</a>
-			</p>
-		</div> -->
-
-		<p class="provided-by"><span class="foundation">OpenResty 基金会</span> 发起，<span class="zhuhai-open">珠海开源软件技术促进中心</span> 联合主办</p>
-		<p class="powered-by">Powered by <a class="my-github" target="_blank" href="//monkindey.github.io/">monkindey</a></p>
+	<!-- 日程表 -->
+	<div class="schedule">
+		<ul id="schedule-list" style="display: none"></ul>
 	</div>
-
-	<div id="image-mask" class="mask" style="display: none">
-		<img height="600" id="expand-image">
-	</div>
+	
+	<p class="provided-by"><span class="foundation">OpenResty 基金会</span> 发起，<span class="zhuhai-open">珠海开源软件技术促进中心</span> 联合主办</p>
+	<p class="powered-by">Powered by <a class="my-github" target="_blank" href="//monkindey.github.io/">monkindey</a></p>
 </body>
 
 <script id="about-tmpl" type="text/template">
-	<h4 class="title"><strong>{name}</strong>{job}</h4>
-	<p class="brief">{brief}</p>
-</script>
-
-<!-- 移动端 -->
-<script id="about-m-tmpl" type="text/template">
-	<div class="{class} avatar"></div>
-	<h3 class="title">{name}</h3>
-	<h4>{job}</h4>
-	<p class="brief">{brief}</p>
+	<li class="{class}">
+		<img src="images/lecturers/{icon}" alt="{name}">
+		<h4 class="title"><strong>{name}</strong>{job}</h4>
+		<p class="brief">{brief}</p>
+	</li>
 </script>
 
 <!-- 日程表模板 -->

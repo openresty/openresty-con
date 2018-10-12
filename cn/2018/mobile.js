@@ -4,13 +4,13 @@
  */
 
 function renderLecturerAtMobile() {
-  var aboutHtml = document.getElementById('about-m-tmpl').innerHTML;
-  var about = document.getElementById('about');
+  var aboutHtml = document.getElementById('about-tmpl').innerHTML;
+  var lecturer = document.getElementById('lecturer-list');
 
-  about.innerHTML = __LECTURER_ABOUT__
+  lecturer.innerHTML = __LECTURER_ABOUT__
     .map(function(l) {
       return aboutHtml.replace(/{(\w+)}/g, function($1, $2) {
-        return l[$2];
+        return l[$2] || '';
       });
     })
     .join(' ');
@@ -18,8 +18,6 @@ function renderLecturerAtMobile() {
 
 function renderScheduleAtMobile() {
   var scheduleTmpl = document.getElementById('schedule-tmpl-1').innerHTML;
-  // document.addEventListener("DOMContentLoaded", function() {
-  // })
   document.getElementById('schedule-list').innerHTML = __SCHEDULE__
     .map(function(s, i) {
       return (
@@ -39,7 +37,6 @@ function renderScheduleAtMobile() {
  * 375 iphone 6
  * 360 galaxy $5
  */
-
 function matchPageMedia() {
   if (window.matchMedia('(max-width: 420px)').matches) {
     renderLecturerAtMobile();
