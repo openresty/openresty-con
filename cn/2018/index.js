@@ -166,6 +166,7 @@
   // 记录前一个被点击的头像
   var preClickedAvatar = null;
   var preClickedIndex = -1;
+  var isInitEvent = false;
   // 890 - (140 - 100)
   var screen = 850;
   var whereIsChun = 3;
@@ -291,9 +292,9 @@
 
   initPage();
 
-  window.addEventListener('resize', function() {
-    if (isPC()) {
-      initPage();
-    }
-  });
+  // window.addEventListener('resize', function() {
+  //   if (isPC()) {
+  //     initPage();
+  //   }
+  // });
 })(this, document);

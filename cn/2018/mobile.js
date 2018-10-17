@@ -34,12 +34,12 @@ function renderScheduleAtMobile() {
   var scheduleTmpl = document.getElementById('schedule-tmpl-1').innerHTML;
   document.getElementById('schedule-list-17').innerHTML = generateScheduleHTML(
     scheduleTmpl,
-    __SCHEDULE__.slice(0, 6)
+    __SCHEDULE__.slice(0, 8)
   );
 
   document.getElementById('schedule-list-18').innerHTML = generateScheduleHTML(
     scheduleTmpl,
-    __SCHEDULE__.slice(6)
+    __SCHEDULE__.slice(8)
   );
 }
 

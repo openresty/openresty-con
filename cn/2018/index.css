@@ -293,7 +293,6 @@ body:before {
 
 /*日程表*/
 .schedule {
-  min-width: 740px;
   width: 72%;
   margin: 35px auto;
 }
@@ -392,8 +391,9 @@ body:before {
 
 @media (max-width: 420px) {
 	html {
-		min-width: 0;
-	}
+    min-width: 0;
+  }
+  
 	body:before {
 		height: 400px;
 		background-position: center 50%;
