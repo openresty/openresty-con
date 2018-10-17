@@ -1,6 +1,6 @@
 (function(global, document) {
   /**
-   * @讲师简介(需要修改简介文案直接在下面修改即可)
+   * @嘉宾简介(需要修改简介文案直接在下面修改即可)
    * name：名字
    * icon: 头像
    * job：职务
@@ -84,52 +84,53 @@
   ];
   var schedule = [
     {
-      name: '戴冠兰',
-      doing: '大规模OpenResty SaaS服务构建实践与技巧'
-    },
-    {
-      name: '蔡书',
-      doing: 'Kong 做微服务网关的实践'
-    },
-    {
-      name: '王利超',
-      doing: '基于 OpenResty 和 zookeeper 实现分布式高可用动态路由转发方案'
-    },
-    {
-      name: 'Thibault Charbonnier',
-      doing: 'Layered caching in OpenResty'
-    },
-    {
-      name: '王发康',
-      doing: '阿里七层流量入口Tengine硬件加速探索之路'
-    },
-    {
       name: '张超',
       doing: '又拍云 OpenResty/Nginx 服务优化实践'
-    },
-    {
-      name: '袁开',
-      doing: 'OpenResty 企业网关应用'
-    },
-    {
-      name: '罗泽轩',
-      doing: '如何编写正确且高效的OpenResty应用'
-    },
-    {
-      name: '洪晓龙',
-      doing: 'How we deep monitoring NGINX'
     },
     {
       name: '顾小平',
       doing: 'OpenResty在腾讯游戏广告投放系统中的应用'
     },
     {
+      name: '章亦春',
+      doing: 'OpenResty 商业支持与 OpenResty Trace 平台'
+    },
+    {
+      name: '洪晓龙',
+      doing: 'How we deep monitoring NGINX'
+    },
+    {
+      name: '戴冠兰',
+      doing: '大规模OpenResty SaaS服务构建实践与技巧'
+    },
+    {
       name: '吴中骅',
       doing: 'OpenResty在同程旅游的应用'
     },
     {
+      name: '袁开',
+      doing: 'OpenResty 企业网关应用'
+    },
+    {
+      name: '蔡书',
+      doing: 'Kong 做微服务网关的实践'
+    },
+    // 11.18
+    {
+      name: 'Thibault Charbonnier',
+      doing: 'Layered caching in OpenResty'
+    },
+    {
+      name: '罗泽轩',
+      doing: '如何编写正确且高效的OpenResty应用'
+    },
+    {
       name: '章亦春',
-      doing: 'OpenResty 商业支持与 OpenResty Trace 平台 & OpenResty 开源新发展'
+      doing: 'OpenResty 开源新发展'
+    },
+    {
+      name: '王发康',
+      doing: '阿里七层流量入口Tengine硬件加速探索之路'
     },
     {
       name: '王克毅',
@@ -138,6 +139,10 @@
     {
       name: '周俊',
       doing: 'OpenResty 实践 CC 攻击防护'
+    },
+    {
+      name: '王利超',
+      doing: '基于 OpenResty 和 zookeeper 实现分布式高可用动态路由转发方案'
     }
   ];
 
@@ -166,24 +171,33 @@
   var whereIsOther = 10;
   var whereIsPerson = [whereIsChun, whereIsOther];
 
-  function renderSchedule() {
+  function generateScheduleHTML(schedule) {
+    var scheduleHTML = '';
     var scheduleTmpl1 = byId('schedule-tmpl-1').innerHTML;
     var scheduleTmpl2 = byId('schedule-tmpl-2').innerHTML;
-    var scheduleHtml = '';
+
     schedule.forEach(function(value, index) {
       if (index % 2 == 0) {
-        scheduleHtml += '<li>';
-        scheduleHtml += scheduleTmpl1.replace(/{(\w+)}/g, function($1, $2) {
+        scheduleHTML += '<li>';
+        scheduleHTML += scheduleTmpl1.replace(/{(\w+)}/g, function($1, $2) {
           return value[$2] ? value[$2] : '';
         });
       } else {
-        scheduleHtml += scheduleTmpl2.replace(/{(\w+)}/g, function($1, $2) {
+        scheduleHTML += scheduleTmpl2.replace(/{(\w+)}/g, function($1, $2) {
           return value[$2] ? value[$2] : '';
         });
-        scheduleHtml += '</li>';
+        scheduleHTML += '</li>';
       }
     });
-    byId('schedule-list').innerHTML = scheduleHtml;
+
+    return scheduleHTML;
+  }
+
+  function renderSchedule() {
+    var schedule17 = schedule.slice(0, 7);
+    var schedule18 = schedule.slice(7);
+    byId('schedule-list-17').innerHTML = generateScheduleHTML(schedule17);
+    byId('schedule-list-18').innerHTML = generateScheduleHTML(schedule18);
   }
 
   function renderLecturerList(lecturers) {
@@ -220,6 +234,10 @@
         var target = e.target;
         var offset = target.dataset['offset'];
         var event = new Event('click');
+
+        if (offset === undefined) {
+          return;
+        }
 
         toArray(switcher.children).forEach(function(dot) {
           dot.classList.remove('active');

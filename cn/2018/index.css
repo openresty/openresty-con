@@ -52,6 +52,10 @@ a {
   margin-top: 30px;
 }
 
+.date {
+  text-align: center;
+}
+
 body:before {
   width: 100%;
   height: 515px;
@@ -166,7 +170,7 @@ body:before {
 }
 
 .lecturer-list-wrapper {
-  width: 71%;
+  width: 900px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -278,7 +282,7 @@ body:before {
 }
 
 #about .brief {
-  line-height: 30px;
+  line-height: 26px;
   margin-top: 5px;
 }
 
@@ -295,12 +299,12 @@ body:before {
   text-shadow: 2px 2px 4px #34495e;
 }
 
-#schedule-list {
+.schedule-list {
   color: #999;
   font-weight: bold;
 }
 
-#schedule-list > li {
+.schedule-list > li {
   font-size: 0;
   margin-top: 10px;
 }
@@ -379,77 +383,92 @@ body:before {
   color: #2674ba;
 }
 
-@media (max-width: 800px) {
-  #lecturer-list li {
-    width: 100%;
-  }
-
-  #lecturer-list li.god-lecturer > img {
-    width: 100%;
-  }
-}
-
 @media (max-width: 420px) {
-  body:before {
-    height: 400px;
-    background-position: center 50%;
+	html {
+		min-width: 0;
+	}
+	body:before {
+		height: 400px;
+		background-position: center 50%;
+	}
+
+	.intro {
+		transform: scale(0.8);
+	}
+
+	.or-logo {
+		height: 40px;
+		width: 40px;
+		vertical-align: -8px;
+  }
+  
+  #switcher {
+		display: none;
   }
 
-  .intro {
-    transform: scale(0.8);
+	/*不要线*/
+	.line {
+		display: none;
+	}
+
+	.lecturer {
+		height: auto;
+	}
+
+	.lecturer-list-wrapper {
+		display: none;
+	}
+
+	.avatar {
+		border-radius: 50%;
+		height: 150px;
+		width: 150px;
+    margin: 0 auto;
+    background-size: contain;
+  }
+  
+  #about .brief {
+    line-height: 20px;
+    font-size: 14px;
   }
 
-  .or-logo {
-    height: 40px;
-    width: 40px;
-    vertical-align: -8px;
-  }
+	.detail {
+		width: 100%;
+	}
 
-  #nav li {
-    width: 100px;
-  }
+	.schedule {
+		width: 100%;
+	}
 
-  .lecturer {
-    height: auto;
-  }
+	.schedule-list > li {
+		text-align: center;
+	}
 
-  .detail {
-    width: 100%;
+	.schedule-item {
+		text-align: left;
+		width: 90%;
   }
+  
+	.sponsor {
+		height: auto;
+		width: 100%;
+	}
 
-  .schedule {
-    width: 100%;
-  }
+	.logo-set {
+		margin: 0;
+	}
 
-  #schedule-list > li {
-    text-align: center;
-  }
+	.logo-set a {
+		display: block;
+	}
 
-  .schedule-item {
-    text-align: left;
-    width: 90%;
-  }
-
-  .sponsor {
-    height: auto;
-    width: 100%;
-  }
-
-  .logo-set {
-    margin: 0;
-  }
-
-  .logo-set a {
-    display: block;
-  }
-
-  .logo {
-    width: 250px;
-  }
+	.logo {
+		width: 250px;
+	}
 }
 
 @media (min-width: 421px) {
-  .doing {
-    min-height: 3em;
-  }
+	.doing {
+		min-height: 3em;
+	}
 }

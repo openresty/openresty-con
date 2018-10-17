@@ -48,7 +48,10 @@
 	<!-- 日程表 -->
 	<div class="schedule">
 		<h1>大会议题</h1>
-		<ul id="schedule-list"></ul>
+		<h2 class="date">11.17</h2>
+		<ul class="schedule-list" id="schedule-list-17"></ul>
+		<h2 class="date">11.18</h2>
+		<ul class="schedule-list" id="schedule-list-18"></ul>
 	</div>
 	
 	<p class="provided-by"><span class="foundation">OpenResty 基金会</span> 发起，<span class="zhuhai-open">珠海开源软件技术促进中心</span> 联合主办</p>
@@ -62,6 +65,16 @@
 <script id="about-tmpl" type="text/template">
 	<h4 class="title"><strong>{name}</strong>{job}</h4>
 	<p class="brief">{brief}</p>
+</script>
+
+<!-- 移动端 -->
+<script id="about-m-tmpl" type="text/template">
+	<div>
+		<div class="avatar {class}" style="background-image: url(images/lecturers/{icon})"></div>
+		<h3 class="title">{name}</h3>
+		<h4>{job}</h4>
+		<p class="brief">{brief}</p>
+	</div>
 </script>
 
 <!-- 日程表模板 -->

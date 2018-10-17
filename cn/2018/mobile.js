@@ -4,8 +4,8 @@
  */
 
 function renderLecturerAtMobile() {
-  var aboutHtml = document.getElementById('about-tmpl').innerHTML;
-  var lecturer = document.getElementById('lecturer-list');
+  var aboutHtml = document.getElementById('about-m-tmpl').innerHTML;
+  var lecturer = document.getElementById('about');
 
   lecturer.innerHTML = __LECTURER_ABOUT__
     .map(function(l) {
@@ -16,9 +16,8 @@ function renderLecturerAtMobile() {
     .join(' ');
 }
 
-function renderScheduleAtMobile() {
-  var scheduleTmpl = document.getElementById('schedule-tmpl-1').innerHTML;
-  document.getElementById('schedule-list').innerHTML = __SCHEDULE__
+function generateScheduleHTML(scheduleTmpl, schedule) {
+  return schedule
     .map(function(s, i) {
       return (
         '<li>' +
@@ -29,6 +28,19 @@ function renderScheduleAtMobile() {
       );
     })
     .join(' ');
+}
+
+function renderScheduleAtMobile() {
+  var scheduleTmpl = document.getElementById('schedule-tmpl-1').innerHTML;
+  document.getElementById('schedule-list-17').innerHTML = generateScheduleHTML(
+    scheduleTmpl,
+    __SCHEDULE__.slice(0, 7)
+  );
+
+  document.getElementById('schedule-list-18').innerHTML = generateScheduleHTML(
+    scheduleTmpl,
+    __SCHEDULE__.slice(7)
+  );
 }
 
 /**
