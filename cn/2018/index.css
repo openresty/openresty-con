@@ -343,6 +343,7 @@ body:before {
   text-align: center;
   height: 250px;
   color: #34495e;
+  margin: 0 auto;
   text-shadow: 2px 2px 4px #34495e;
 }
 
