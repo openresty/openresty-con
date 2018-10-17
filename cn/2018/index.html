@@ -32,33 +32,36 @@
 		<h3><a target="_blank" class="address" href="//j.map.baidu.com/ORFLH">地址: 杭州市滨江区网商路559号网易大厦</a></h3>
 	</div>
 
-	<div class="nav-container">
-		<ul id="nav">
-			<li class="active" data-id="lecturer-list">嘉宾</li>
-			<li data-id="schedule-list">日程</li>
-		</ul>
-	</div>
-	
 	<!-- 嘉宾 -->
 	<div class="lecturer">
-		<ul id="lecturer-list"></ul>
+		<h4 class="line"></h4>
+		<div class="lecturer-list-wrapper">
+			<ul id="lecturer-list"></ul>
+		</div>
+		<div id="about"></div>
+		<p id="switcher">
+			<i data-offset="0" class="active"></i>
+			<i data-offset="1"></i>
+		</p>
 	</div>
 
 	<!-- 日程表 -->
 	<div class="schedule">
-		<ul id="schedule-list" style="display: none"></ul>
+		<h1>大会议题</h1>
+		<ul id="schedule-list"></ul>
 	</div>
 	
 	<p class="provided-by"><span class="foundation">OpenResty 基金会</span> 发起，<span class="zhuhai-open">珠海开源软件技术促进中心</span> 联合主办</p>
 	<p class="powered-by">Powered by <a class="my-github" target="_blank" href="//monkindey.github.io/">monkindey</a></p>
 </body>
 
+<script id="lecturer-tmpl" type="text/template">
+	<li class="{class}" data-index="{index}" style="background-image: url(images/lecturers/{icon})"></li>
+</script>
+
 <script id="about-tmpl" type="text/template">
-	<li class="{class}">
-		<img src="images/lecturers/{icon}" alt="{name}">
-		<h4 class="title"><strong>{name}</strong>{job}</h4>
-		<p class="brief">{brief}</p>
-	</li>
+	<h4 class="title"><strong>{name}</strong>{job}</h4>
+	<p class="brief">{brief}</p>
 </script>
 
 <!-- 日程表模板 -->

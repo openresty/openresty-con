@@ -1,7 +1,4 @@
 (function(global, document) {
-  var lecturerAbout = [];
-  var schedule = [];
-
   /**
    * @讲师简介(需要修改简介文案直接在下面修改即可)
    * name：名字
@@ -12,14 +9,6 @@
    * 暴露出数据为了兼容移动端
    */
   var lecturers = [
-    {
-      name: '章亦春',
-      class: 'god-lecturer',
-      icon: 'chun.png',
-      job: 'OpenResty Inc',
-      brief:
-        'OpenResty 开源项目创始人，OpenResty Inc. 公司创始人兼 CEO，NGINX 和 LuaJIT 等众多开源项目贡献者'
-    },
     {
       name: '袁开',
       icon: 'ck.jpg',
@@ -36,8 +25,17 @@
       job: 'Kong Inc'
     },
     {
+      name: '章亦春',
+      class: 'god-lecturer',
+      icon: 'chun.png',
+      job: 'OpenResty Inc',
+      brief:
+        'OpenResty 开源项目创始人，OpenResty Inc. 公司创始人兼 CEO，NGINX 和 LuaJIT 等众多开源项目贡献者'
+    },
+    {
       name: 'Thibault Charbonnier',
-      icon: 'thi.png'
+      icon: 'thi.png',
+      job: 'Kong Inc'
     },
     {
       name: '罗泽轩',
@@ -154,7 +152,21 @@
     return [].slice.apply(collection);
   }
 
-  function renderSchedule(schedule) {
+  var lecturerList = byId('lecturer-list');
+  var switcher = byId('switcher');
+  var about = byId('about');
+  var lecturerTmpl = byId('lecturer-tmpl').innerHTML;
+  var aboutTmpl = byId('about-tmpl').innerHTML;
+
+  // 记录前一个被点击的头像
+  var preClickedAvatar = null;
+  var preClickedIndex = -1;
+  var screen = 880;
+  var whereIsChun = 3;
+  var whereIsOther = 10;
+  var whereIsPerson = [whereIsChun, whereIsOther];
+
+  function renderSchedule() {
     var scheduleTmpl1 = byId('schedule-tmpl-1').innerHTML;
     var scheduleTmpl2 = byId('schedule-tmpl-2').innerHTML;
     var scheduleHtml = '';
@@ -175,38 +187,94 @@
   }
 
   function renderLecturerList(lecturers) {
-    var lecturerTpl = byId('about-tmpl').innerHTML;
     var lecturerHTML = lecturers
-      .map(lecturer => {
-        return lecturerTpl.replace(/{(\w+)}/g, function($1, $2) {
+      .map(function(lecturer, index) {
+        lecturer.index = index + 1;
+        return lecturerTmpl.replace(/{(\w+)}/g, function($1, $2) {
           return lecturer[$2] ? lecturer[$2] : '';
         });
       })
       .join(' ');
-    byId('lecturer-list').innerHTML = lecturerHTML;
+    lecturerList.innerHTML = lecturerHTML;
   }
 
   function isPC() {
     return window.matchMedia('(min-width: 421px)').matches;
   }
 
-  var nav = byId('nav');
-  nav.addEventListener('click', function(e) {
-    var children = toArray(nav.children);
-    var target = e.target;
+  // 初始化页面触发click事件, 显示章亦春图片
+  function initPage() {
+    var event = new Event('click');
+    renderLecturerList(lecturers);
+    initEvents();
 
-    children.forEach(child => {
-      var id = child.dataset.id;
-      child.classList.remove('active');
-      byId(id).style.display = 'none';
-    });
+    event.AUTO_INDEX = whereIsChun;
+    lecturerList.dispatchEvent(event);
+    renderSchedule();
+  }
 
-    target.classList.add('active');
-    byId(target.dataset.id).style.display = '';
+  function initEvents() {
+    switcher.addEventListener(
+      'click',
+      function(e) {
+        var target = e.target;
+        var offset = target.dataset['offset'];
+        var event = new Event('click');
+
+        toArray(switcher.children).forEach(function(dot) {
+          dot.classList.remove('active');
+        });
+        target.classList.add('active');
+        lecturerList.style.transform = `translate3d(-${screen *
+          offset}px, 0px, 0px)`;
+
+        event.AUTO_INDEX = whereIsPerson[offset];
+        lecturerList.dispatchEvent(event);
+      },
+      false
+    );
+
+    // 使用事件委托，减少事件绑定
+    lecturerList.addEventListener(
+      'click',
+      function(e) {
+        var target = e.target;
+        var index = parseInt(target.getAttribute('data-index'));
+        var autoIndex = e.AUTO_INDEX;
+
+        if (autoIndex) {
+          target = target.children[autoIndex];
+          index = autoIndex + 1;
+        }
+
+        if (isNaN(index)) {
+          return;
+        }
+
+        if (preClickedAvatar && preClickedIndex != index) {
+          // preClickedAvatar.classList.add('gray');
+          preClickedAvatar.classList.remove('largen');
+        }
+
+        // target.classList.remove('gray');
+        target.classList.add('largen');
+
+        about.innerHTML = aboutTmpl.replace(/{(\w+)}/g, function($1, $2) {
+          return lecturers[index - 1][$2] || '';
+        });
+
+        preClickedAvatar = target;
+        preClickedIndex = index;
+      },
+      false
+    );
+  }
+
+  initPage();
+
+  window.addEventListener('resize', function() {
+    if (isPC()) {
+      initPage();
+    }
   });
-
-  window.addEventListener('resize', function() {});
-
-  renderLecturerList(lecturers);
-  renderSchedule(schedule);
 })(this, document);

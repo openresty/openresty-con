@@ -162,18 +162,21 @@ body:before {
 .lecturer {
   position: relative;
   width: 100%;
+  height: 380px;
+}
+
+.lecturer-list-wrapper {
+  width: 71%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 #lecturer-list {
   text-align: center;
-  margin: 0 auto;
-  margin-top: 35px;
-  width: 80%;
-  color: #999;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  height: 150px;
+  white-space: nowrap;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 #lecturer-list:after {
@@ -186,32 +189,71 @@ body:before {
 
 #lecturer-list li {
   vertical-align: middle;
+  display: inline-block;
+  height: 98px;
+  width: 98px;
   margin-left: 20px;
-  margin-bottom: 10px;
-  width: 25%;
-  font-size: 15px;
-}
-
-#lecturer-list li > img {
-  width: 100%;
-  border-radius: 50%;
-  transition: transform 0.4s;
-}
-
-#lecturer-list li > img:hover {
-  transform: scale(1.1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-size: contain;
+  cursor: pointer;
 }
 
 #lecturer-list li:first-child {
   margin-left: 0;
 }
 
-#lecturer-list li.god-lecturer {
+/*置灰*/
+.gray {
+	-webkit-filter: grayscale(50%);
+	-moz-filter: grayscale(50%);
+	-ms-filter: grayscale(50%);
+	-o-filter: grayscale(50%);
+	filter: grayscale(50%);
+	filter: gray;
+}
+
+/*变大*/
+#lecturer-list li.largen {
+	height: 140px;
+	width: 140px;
+}
+
+#lecturer-list li {
+	border-radius: 50%;
+	/*border: 1px solid #ccc;*/
+}
+
+#lecturer-list li > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+#switcher {
+  text-align: center;
+  position: absolute;
+  bottom: 5px;
   width: 100%;
 }
 
-#lecturer-list li.god-lecturer > img {
-  width: 25%;
+#switcher i {
+  display: inline-block;
+  border: 5px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#switcher i.active {
+  border-color: #1f63af;
+}
+
+.line {
+  position: relative;
+  height: 10px;
+  background: url(images/line.png) repeat-x;
+  top: 120px;
+  z-index: -10;
 }
 
 #about {
@@ -220,7 +262,7 @@ body:before {
   text-align: center;
   color: #999;
   font-size: 15px;
-  margin-top: 35px;
+  margin-top: 20px;
   position: relative;
 }
 
@@ -242,7 +284,7 @@ body:before {
 
 /*日程表*/
 .schedule {
-  width: 75%;
+	width: 740px;
   margin: 35px auto;
 }
 
@@ -269,7 +311,6 @@ body:before {
   font-size: 16px;
   display: inline-block;
   width: 49%;
-  height: 100px;
   background-color: #f8f8f8;
   text-indent: 20px;
   line-height: 1.5;
