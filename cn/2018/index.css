@@ -170,7 +170,7 @@ body:before {
 }
 
 .lecturer-list-wrapper {
-  width: 900px;
+  width: 920px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -289,7 +289,7 @@ body:before {
 /*日程表*/
 .schedule {
   min-width: 740px;
-  width: 71%;
+  width: 72%;
   margin: 35px auto;
 }
 

@@ -166,7 +166,7 @@
   // 记录前一个被点击的头像
   var preClickedAvatar = null;
   var preClickedIndex = -1;
-  var screen = 880;
+  var screen = 875;
   var whereIsChun = 3;
   var whereIsOther = 10;
   var whereIsPerson = [whereIsChun, whereIsOther];
