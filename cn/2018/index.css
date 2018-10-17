@@ -170,7 +170,7 @@ body:before {
 }
 
 .lecturer-list-wrapper {
-  width: 920px;
+  width: 890px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -181,6 +181,7 @@ body:before {
   white-space: nowrap;
   -webkit-transition: 0.8s;
   transition: 0.8s;
+  font-size: 0;
 }
 
 #lecturer-list:after {
@@ -194,9 +195,9 @@ body:before {
 #lecturer-list li {
   vertical-align: middle;
   display: inline-block;
-  height: 98px;
-  width: 98px;
-  margin-left: 20px;
+  height: 100px;
+  width: 100px;
+  margin-left: 25px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   background-size: contain;
@@ -204,6 +205,10 @@ body:before {
 }
 
 #lecturer-list li:first-child {
+  margin-left: 0;
+}
+
+#lecturer-list li:nth-child(8) {
   margin-left: 0;
 }
 
@@ -256,7 +261,7 @@ body:before {
   position: relative;
   height: 10px;
   background: url(images/line.png) repeat-x;
-  top: 120px;
+  top: 105px;
   z-index: -10;
 }
 
