@@ -288,7 +288,8 @@ body:before {
 
 /*日程表*/
 .schedule {
-	width: 740px;
+  min-width: 740px;
+  width: 71%;
   margin: 35px auto;
 }
 
