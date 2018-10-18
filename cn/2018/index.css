@@ -112,7 +112,7 @@ body:before {
   width: 100%;
   color: white;
   position: absolute;
-  top: 18%;
+  top: 10%;
   right: 0;
   left: 0;
   margin: auto;
@@ -140,6 +140,16 @@ body:before {
   height: 100px;
   width: 100px;
   vertical-align: -10px;
+}
+
+.attent_button {
+    border: 2px solid rgba(255,255,255,0.8);
+    background: rgba(255,255,255,0.1)!important;
+    color: rgba(255,255,255,1);
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .address {
