@@ -18,7 +18,6 @@
     {
       name: '蔡书',
       icon: 'cs.jpg',
-      job: 'Polaristech',
       brief:
         '越来越多的项目基于 spring cloud 或者 kubernetes 做微服务，这里我们分享一些用 Kong 做服务网关的经历。在这里，你可以了解到，如何用 Kong 替代 zuul 做服务网关，以及如何在 kubernetes 上做更广泛的服务治理。',
     },
@@ -27,12 +26,12 @@
       icon: 'dgl.jpg',
       job: 'Kong Inc',
       brief:
-        '作者目前在 Kong 担任Engineering Manager，带领 Kong 的云技术团队负责从零到一研发基于 OpenResty 的 SaaS 服务。本演讲将结合作者的经验与实践，探讨搭建大规模OpenResty SaaS服务的搭建与运维技巧：包括针对OpenResty 系统调优，OpenResty 产品级Metrics系统的架构设计，以及自建数据中心和公有云Infrastructure as code 的生产实践。',
+        'OpenResty 贡献者。现就职于Kong， 担任工程经理与技术负责人，带领 Kong Cloud 、人工智能以及机器学习团队，负责产品研发与落地。他之前曾在Cloudflare 担任Tech Lead, 参与过达到万亿级别每月请求规模能力的 WAF 与 CDN 的研发。本次他将结合多年实战经验，与大家分享基于 OpenResty 大规模 SaaS 服务的架构设计、优化与运维技巧。',
     },
     {
       name: '章亦春',
       class: 'god-lecturer',
-      icon: 'chun.png',
+      icon: 'chun.jpg',
       job: 'OpenResty Inc',
       brief:
         'OpenResty 开源项目创始人，OpenResty Inc. 公司创始人兼 CEO，NGINX 和 LuaJIT 等众多开源项目贡献者'
@@ -54,7 +53,7 @@
       name: '王发康',
       icon: 'wfk.jpg',
       job: '阿里巴巴',
-      brief: '该主题主要介绍阿里巴巴在 Tengine/Nginx 上如何使用硬件加速卸载一些 CPU 密集型运算，比如 HTTPS 和 GZIP。',
+      brief: '阿里巴巴技术专家、负责阿里集团WEB统一接入层的开发及维护。秉着软硬件结合的性能优化思想，阿里七层流量入口核心系统Tengine/Nginx 是如何使用硬件加速卸载一些 CPU 密集型运算（比如 HTTPS 和 GZIP）从而取得性能提升、成本优化。',
     },
     {
       name: '王利超',
@@ -71,17 +70,18 @@
       name: '张超',
       icon: 'zc.jpg',
       job: '又拍云',
-      brief: '本次分享着重于介绍又拍云 CDN 平台在不断的更新迭代中总结出的关于 OpenResty/Nginx 服务优化的经验，包括如何使用 Intel QAT 卡对 SSL 进行硬件加速、如何针对大文件下载的场景进行的分片性能优化以及如何基于容器环境构建线上实时性能分析环境的经验。',
+      brief: '又拍云系统开发工程师，负责又拍云 CDN 平台反向代理层组件的开发和维护。Nginx/OpenResty 等开源软件爱好者。<br>本次分享会着重于介绍又拍云 CDN 平台在不断的更新迭代中总结出的关于 OpenResty/Nginx 服务优化的经验，包括构建容器化的生产环境性能分析环境、集成 SSL 硬件加速至 OpenResty及其陷阱等案例。',
     },
     {
       name: '顾小平',
       icon: 'gxp.jpg',
       job: '腾讯',
-      brief: 'OpenResty 在腾讯游戏广告投放系统中，每年支撑数亿营销费用投放；在腾讯游戏社区类内容产品中，支持每天数亿次API访问请求。本次分享内容包括：*怎样利用 OpenResty 快速搭建实时竞价广告投放引擎；      *怎样利用 OpenResty 轻松处理10万+QPS广告交易平台的实时竞价请求；      *如何用火焰图指导性能优化；',
+      brief: '顾小平，腾讯游戏营销技术后台负责人，从事Ad-Tech&Mar-Tech技术，专注于通过数据，算法，以及技术的力量来改变营销的效率和效果的提升。本次分享为大家带来OpenResty在腾讯内部的2个应用案例，一个是社区和内容营销中内部API网关luffy，重点讲述利用火焰图指导性能优化；另一个是OpenResty在腾讯游戏广告营销投放系统中的应用，通过构建RTB实时竞价网关，实时竞价引擎，轻松支持10万+QPS，支持数亿/年广告投放放费用。',
     },
     {
       name: '周俊',
-      icon: 'zj.jpg'
+      icon: 'zj.jpg',
+      brief: '安全从业人员，本次议题主要是把在日常工作中处理的攻击防护事件总结整理，和大家分享交流',
     },
     {
       name: '王克毅',
@@ -156,7 +156,8 @@
     },
     {
       name: '王利超',
-      doing: '基于 OpenResty 和 zookeeper 实现分布式高可用动态路由转发方案'
+      doing: '基于 OpenResty 和 zookeeper 实现分布式高可用动态路由转发方案',
+      brief: '如何基于qconf zookeeper和 OpenResty 设计高可靠，高性能分布式动态路由方案',
     }
   ];
 
