@@ -71,7 +71,7 @@
       icon: 'thi.png',
       job: 'Kong Inc',
       brief:
-        'Engineer of Kong (Open Source API Gateway) and OpenResty Contributor. In this talk, we will dive into the new "mlcache" library, which aims at providing a powerful abstraction for layered caching in OpenResty. We will explore several practical use-cases for it that will help you achieve high-performance goals for your applications.',
+        'Principal Engineer at Kong Inc. and OpenResty contributor. In this talk, we will dive into the new "mlcache" library, which aims at providing a powerful abstraction for layered caching in OpenResty. We will explore several practical use-cases for it that will help you achieve high-performance goals for your applications.',
     },
     {
       name: '王克毅',
