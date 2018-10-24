@@ -105,7 +105,7 @@
     },
     {
       name: '洪晓龙',
-      doing: 'How we deep monitoring NGINX'
+      doing: '深度玩转 NGINX 监控'
     },
     {
       name: '戴冠兰',
