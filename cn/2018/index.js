@@ -219,8 +219,8 @@
   }
 
   function renderSchedule() {
-    var schedule17 = schedule.slice(0, 7);
-    var schedule18 = schedule.slice(7);
+    var schedule17 = schedule.slice(0, 8);
+    var schedule18 = schedule.slice(8);
     byId('schedule-list-17').innerHTML = generateScheduleHTML(schedule17);
     byId('schedule-list-18').innerHTML = generateScheduleHTML(schedule18);
   }
