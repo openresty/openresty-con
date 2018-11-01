@@ -92,62 +92,81 @@
   ];
   var schedule = [
     {
+      time: '8:30',
+      name: '签到',
+    },
+    {
+      time: '9:00',
       name: '张超',
       doing: '又拍云 OpenResty/Nginx 服务优化实践'
     },
     {
+      time: '9:50',
       name: '顾小平',
       doing: 'OpenResty在腾讯游戏广告投放系统中的应用'
     },
     {
+      time: '10:40',
       name: '章亦春',
       doing: 'OpenResty 商业支持与 OpenResty Trace 平台'
     },
     {
+      time: '13:00',
       name: '洪晓龙',
       doing: '深度玩转 NGINX 监控'
     },
     {
+      time: '13:45',
       name: '戴冠兰',
       doing: '大规模OpenResty SaaS服务构建实践与技巧'
     },
     {
+      time: '14:30',
       name: '吴中骅',
       doing: 'OpenResty 在同程艺龙的应用'
     },
     {
+      time: '15:15',
       name: '蔡书',
       doing: 'Kong 做微服务网关的实践'
     },
     // 11.18
     {
+      time: '9:00',
       name: 'Thibault Charbonnier',
       doing: 'Layered caching in OpenResty'
     },
     {
+      time: '9:50',
       name: '罗泽轩',
       doing: '如何编写正确且高效的OpenResty应用'
     },
     {
+      time: '10:40',
       name: '章亦春',
       doing: 'OpenResty 开源新发展'
     },
     {
+      time: '13:00',
       name: '王发康',
       doing: '阿里七层流量入口Tengine硬件加速探索之路'
     },
     {
+      time: '13:45',
       name: '王克毅',
       doing: '把 Lisp 代码塞进 OpenResty'
     },
     {
-      name: '周俊',
-      doing: 'OpenResty 实践 CC 攻击防护'
-    },
-    {
+      time: '14:30',
       name: '袁开',
       doing: 'OpenResty 企业网关应用'
     },
+    {
+      time: '15:15',
+      name: '周俊',
+      doing: 'OpenResty 实践 CC 攻击防护'
+    },
+
   ];
 
   global.__LECTURER_ABOUT__ = lecturers;
