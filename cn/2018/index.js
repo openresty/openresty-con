@@ -108,7 +108,7 @@
     {
       time: '10:40',
       name: '章亦春',
-      doing: 'OpenResty 商业支持与 OpenResty Trace 平台'
+      doing: 'OpenResty 开源世界新发展'
     },
     {
       time: '13:00',
@@ -144,7 +144,7 @@
     {
       time: '10:40',
       name: '章亦春',
-      doing: 'OpenResty 开源新发展'
+      doing: '开源 OpenResty 的商业技术支持与 OpenResty Trace 平台'
     },
     {
       time: '13:00',
