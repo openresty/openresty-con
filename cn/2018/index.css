@@ -358,6 +358,56 @@ body:before {
   color: #42b983;
 }
 
+#moment-list {
+  text-align: center;
+}
+
+/* 精彩瞬间 */
+#moment-list img {
+  height: 150px;
+  width: 224px;
+	box-shadow: 5px 5px 5px #ccc;
+	border-radius: 3px;
+}
+
+#moment-list img:hover {
+	cursor: zoom-in;
+}
+
+.mask {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	opacity: 0;
+	transition: opacity 1s ease-out;
+}
+
+.mask.active {
+	opacity: 1;
+}
+
+.mask:hover {
+	cursor: zoom-out;
+}
+
+/* 为了居中 */
+.mask:after {
+	display: inline-block;
+	content: '';
+	height: 100%;
+	width: 1px;
+	vertical-align: middle;
+}
+
+#expand-image {
+	vertical-align: middle;
+}
+
 /*合作伙伴*/
 .sponsor {
   width: 700px;
