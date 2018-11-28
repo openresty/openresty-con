@@ -121,7 +121,9 @@
     {
       time: '10:40',
       name: '章亦春',
-      doing: 'OpenResty 开源世界新发展'
+      doing: 'OpenResty 开源世界新发展',
+      ppt_url: 'http://t.cn/E25hVBy',
+      pdf: '幻灯片'
     },
     {
       time: '13:00',
@@ -169,7 +171,9 @@
     {
       time: '10:40',
       name: '章亦春',
-      doing: '开源 OpenResty 的商业技术支持与 OpenResty Trace 平台'
+      doing: '开源 OpenResty 的商业技术支持与 OpenResty Trace 平台',
+      ppt_url: 'http://t.cn/E2SfrsX',
+      pdf: '幻灯片'
     },
     {
       time: '13:00',
