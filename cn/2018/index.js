@@ -219,7 +219,7 @@
   var lecturerList = byId('lecturer-list');
   var momentList = byId('moment-list');
   var imageMark = byId('image-mask');
-	var expandedImage = byId('expand-image');
+  var expandedImage = byId('expand-image');
   var switcher = byId('switcher');
   var about = byId('about');
   var lecturerTmpl = byId('lecturer-tmpl').innerHTML;
@@ -359,9 +359,11 @@
     momentList.addEventListener(
       'click',
       function(e) {
-        imageMark.style.display = 'block';
-        imageMark.classList.add('active');
-        expandedImage.setAttribute('src', e.target.getAttribute('src'));
+        if (e.target.nodeName === 'IMG') {
+          imageMark.style.display = 'block';
+          imageMark.classList.add('active');
+          expandedImage.setAttribute('src', e.target.getAttribute('src'));
+        }
       },
       false
     );
