@@ -123,7 +123,9 @@
       name: '章亦春',
       doing: 'OpenResty 开源世界新发展',
       ppt_url: 'http://t.cn/E25hVBy',
-      pdf: '幻灯片'
+      pdf: '幻灯片',
+      youku_url: 'youku.com',
+      youtube_url: 'youtube.com'
     },
     {
       time: '13:00',
@@ -203,7 +205,17 @@
       ppt_url: 'ppt/OpenResty 实践 CC 攻击防护--周俊.pdf',
       pdf: '幻灯片'
     }
-  ];
+  ].map(function(s) {
+    if (s.youku_url) {
+      s.youkuVideo = '优酷';
+    }
+
+    if (s.youtube_url) {
+      s.youtubeVideo = 'youtube';
+    }
+
+    return s;
+  });
 
   global.__LECTURER_ABOUT__ = lecturers;
   global.__SCHEDULE__ = schedule;
@@ -228,7 +240,6 @@
   // 记录前一个被点击的头像
   var preClickedAvatar = null;
   var preClickedIndex = -1;
-  var isInitEvent = false;
   // 890 - (140 - 100)
   var screen = 850;
   var whereIsChun = 3;
