@@ -109,14 +109,18 @@
       name: '张超',
       doing: '又拍云 OpenResty/Nginx 服务优化实践',
       ppt_url: 'ppt/又拍云服务优化实践--张超.pdf',
-      pdf: '幻灯片'
+      pdf: '幻灯片',
+      youku_url: 'http://v.youku.com/v_show/id_XMzk0MzkwMDczMg==.html?spm=a2h3j.8428770.3416059.1',
+      youtube_url: 'https://www.youtube.com/watch?v=cCjYAaXMpu8'
     },
     {
       time: '9:50',
       name: '顾小平',
       doing: 'OpenResty在腾讯游戏广告投放系统中的应用',
       ppt_url: 'ppt/OpenResty在腾讯游戏营销技术中的应用--顾小平.pdf',
-      pdf: '幻灯片'
+      pdf: '幻灯片',
+      youku_url: 'http://v.youku.com/v_show/id_XMzk0MzkzOTAwNA==.html?spm=a2h3j.8428770.3416059.1',
+      youtube_url: 'https://www.youtube.com/watch?v=3qfDnyqW66U'
     },
     {
       time: '10:40',
@@ -124,36 +128,42 @@
       doing: 'OpenResty 开源世界新发展',
       ppt_url: 'http://t.cn/E25hVBy',
       pdf: '幻灯片',
-      youku_url: 'youku.com',
-      youtube_url: 'youtube.com'
+      video_url: 'http://t.cn/E25hVBU',
     },
     {
       time: '13:00',
       name: '洪晓龙',
       doing: '深度玩转 NGINX 监控',
       ppt_url: 'ppt/深度玩转NGINX监控--洪晓龙.pdf',
-      pdf: '幻灯片'
+      pdf: '幻灯片',
+      youku_url: 'http://v.youku.com/v_show/id_XMzk0Mzk3MTk3Mg==.html?spm=a2h3j.8428770.3416059.1',
+      youtube_url: 'https://www.youtube.com/watch?v=hTLYtcbdqkg'
     },
     {
       time: '13:45',
       name: '戴冠兰',
       doing: '大规模OpenResty SaaS服务构建实践与技巧',
       ppt_url: 'ppt/大规模OpenResty SaaS服务的搭建与运维技巧--戴冠兰.pdf',
-      pdf: '幻灯片'
+      pdf: '幻灯片',
+      youku_url: 'http://v.youku.com/v_show/id_XMzk0Mzk3NzI3Mg==.html?spm=a2h3j.8428770.3416059.1',
+      youtube_url: 'https://www.youtube.com/watch?v=dEGBES_q2To'
     },
     {
       time: '14:30',
       name: '吴中骅',
       doing: 'OpenResty 在同程艺龙的应用',
       ppt_url: 'ppt/OpenResty 在同程艺龙的应用--吴中骅.pdf',
-      pdf: '幻灯片'
+      pdf: '幻灯片',
+      youku_url: 'http://v.youku.com/v_show/id_XMzk0Mzk4MDI4OA==.html?spm=a2h3j.8428770.3416059.1'
     },
     {
       time: '15:15',
       name: '蔡书',
       doing: 'Kong 做微服务网关的实践',
       ppt_url: 'ppt/Kong做微服务网关的实践--蔡书.pdf',
-      pdf: '幻灯片'
+      pdf: '幻灯片',
+      youku_url: 'http://v.youku.com/v_show/id_XMzk0Mzk4MzI0OA==.html?spm=a2h3j.8428770.3416059.1',
+      youtube_url: 'https://www.youtube.com/watch?v=VG5QF7CvSVA'
     },
     // 11.18
     {
@@ -161,49 +171,61 @@
       name: 'Thibault Charbonnier',
       doing: 'Layered caching in OpenResty',
       ppt_url: 'ppt/layered_caching_in_openresty--Thibault.pdf',
-      pdf: '幻灯片'
+      pdf: '幻灯片',
+      youku_url: 'http://v.youku.com/v_show/id_XMzk0MzcyMDMwMA==.html?spm=a2h3j.8428770.3416059.1',
+      youtube_url: 'https://www.youtube.com/watch?v=QF1Gtj3ahB0'
     },
     {
       time: '9:50',
       name: '罗泽轩',
       doing: '如何编写正确且高效的OpenResty应用',
       ppt_url: 'ppt/如何编写正确且高效的OpenResty应用--罗泽轩.pdf',
-      pdf: '幻灯片'
+      pdf: '幻灯片',
+      youku_url: 'http://v.youku.com/v_show/id_XMzk0MzcyNTg4NA==.html?spm=a2h3j.8428770.3416059.1',
+      youtube_url: 'https://www.youtube.com/watch?v=kIYa5Ff7IOA'
     },
     {
       time: '10:40',
       name: '章亦春',
       doing: '开源 OpenResty 的商业技术支持与 OpenResty Trace 平台',
       ppt_url: 'http://t.cn/E2SfrsX',
-      pdf: '幻灯片'
+      pdf: '幻灯片',
+      video_url: 'http://t.cn/E2Sfrsx',
     },
     {
       time: '13:00',
       name: '王发康',
       doing: '阿里七层流量入口Tengine硬件加速探索之路',
       ppt_url: 'ppt/阿里七层流量入口Tengine硬件加速探索之路--王发康.pdf',
-      pdf: '幻灯片'
+      pdf: '幻灯片',
+      youku_url: 'http://v.youku.com/v_show/id_XMzk0MzczMDY5Ng==.html?spm=a2h3j.8428770.3416059.1',
+      youtube_url: 'https://www.youtube.com/watch?v=KhQNKCUhseE'
     },
     {
       time: '13:45',
       name: '王克毅',
       doing: '把 Lisp 代码塞进 OpenResty',
       ppt_url: 'ppt/把 Lisp 代码塞进 OpenResty--王克毅.pdf',
-      pdf: '幻灯片'
+      pdf: '幻灯片',
+      youku_url: 'http://v.youku.com/v_show/id_XMzk0Mzg1Nzk5Ng==.html?spm=a2h3j.8428770.3416059.1'
     },
     {
       time: '14:30',
       name: '袁开',
       doing: 'OpenResty 企业网关应用',
       ppt_url: 'ppt/OpenResty 企业网关应用--袁开.pdf',
-      pdf: '幻灯片'
+      pdf: '幻灯片',
+      youku_url: 'http://v.youku.com/v_show/id_XMzk0Mzc1NjE2OA==.html?spm=a2h3j.8428770.3416059.1',
+      youtube_url: 'https://www.youtube.com/watch?v=M2vb94t1pLU'
     },
     {
       time: '15:15',
       name: '周俊',
       doing: 'OpenResty 实践 CC 攻击防护',
       ppt_url: 'ppt/OpenResty 实践 CC 攻击防护--周俊.pdf',
-      pdf: '幻灯片'
+      pdf: '幻灯片',
+      youku_url: 'http://v.youku.com/v_show/id_XMzk0Mzc2Mjc0NA==.html?spm=a2h3j.8428770.3416059.1',
+      youtube_url: 'https://www.youtube.com/watch?v=7rZlr-s0RRc'
     }
   ].map(function(s) {
     if (s.youku_url) {
@@ -211,7 +233,11 @@
     }
 
     if (s.youtube_url) {
-      s.youtubeVideo = 'youtube';
+      s.youtubeVideo = 'YouTube';
+    }
+
+    if (s.video_url) {
+      s.video = '视频';
     }
 
     return s;
